@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "jwtSecret": "noPassaran",
+  "mongoUri": "mongodb+srv://vlife_user:vlife_user_Qq@cluster0.rccbq.mongodb.net/vlife_project?retryWrites=true&w=majority",
+  "baseurl": "http://localhost:5000"
+}

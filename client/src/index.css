@@ -1,0 +1,114 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+html, body {
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    overflow: hidden;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header_wrapper {
+    display: grid;
+    grid-template-columns: 40px 60px auto 40px 20px 10px;
+    height: 30px;
+}
+
+.header_logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+/*    background-color: grey;*/
+    align-self: center;
+    justify-self: center;
+}
+
+.header_menu {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+/*    background-color: gold;*/
+    align-self: center;
+    justify-self: center;
+}
+
+.body_wrapper {
+    display: grid;
+    grid-template-columns: auto 200px 90px 200px auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    flex-grow: 3
+}
+
+.body_left {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+/*    background-color: grey;*/
+    align-self: center;
+    justify-self: center;
+}
+
+.body_center {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+    background-color: none;
+    align-self: center;
+    justify-self: center;
+}
+
+.body_right {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer_wrapper {
+    display: grid;
+    grid-template-columns: 40px 60px auto 40px 20px 10px;
+}
+
+.footer_left {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+    background-color: grey;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer_right {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+/*    background-color: gold;*/
+    align-self: center;
+    justify-self: center;
+}
+
+
