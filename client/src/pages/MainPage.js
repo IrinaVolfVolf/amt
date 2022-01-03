@@ -77,7 +77,7 @@ export const MainPage = () => {
         </div>
         <div className="footer_wrapper">
 {/*            <div className="footer_left">Logo</div>*/}
-            <div className="footer_right">about</div>
+            <div className="footer_right"><a href="/aboutsystempage">about</a></div>
         </div>
         </>
     )

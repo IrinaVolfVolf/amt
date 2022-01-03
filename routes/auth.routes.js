@@ -1,4 +1,4 @@
-const  {Router} = require('express')
+const {Router} = require('express')
 const bcrypt = require('bcryptjs')
 const config = require('config')
 const jwt = require('jsonwebtoken')
@@ -28,16 +28,21 @@ router.post(
         }
 
         const {email, password} = req.body
-        const candidate = await User.findOne({ email })
+        let candidate = await User.findOne({ email })
         console.log(candidate)
         if (candidate) {
             res.status(400).json({ message: 'This User already exist' })
         }
 
-        const hashedPassword = await bcrypt.hash(password, 12)
-        const user = new User({ email, password: hashedPassword })
-
-        await user.save()
+        let hashedPassword = await bcrypt.hash(password, 12)
+        console.log(hashedPassword)
+        let user = new User({email, password: hashedPassword})
+        console.log(user)
+        await user.save((error, user) => {
+            if (error) {
+                return console.error(error);
+            }
+        })
 
         res.status(201).json({ message: 'User created' })
 
