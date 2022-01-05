@@ -1,0 +1,81 @@
+.wrapper {
+    display: grid;
+    max-width: 420px;
+    margin: auto;
+    grid-gap: 3px;
+    grid-template-rows: '30px 30px minmax(30px, auto) 30px';
+    grid-template-columns: '30px auto auto auto auto auto';
+    background-color: LightCyan;
+    color: #444;
+    padding: 10px;
+    border-radius: 10px
+}
+
+.FullChatWindowBackButton {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: lightgrey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 45px;
+}
+
+.FullChatWindowTitle {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    background-color: lightgrey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.FullChatWindowSelectorArea {
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+    background-color: lightgrey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 45px;
+}
+
+.FullChatWindowMessagesArea {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    min-height: 560px;
+    background-color: lightgrey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.FullChatWindowInputArea {
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+    background-color: lightgrey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: -webkit-linear-gradient(180deg, rgb(47, 49, 39), rgb(78, 91, 191), rgb(47, 49, 39));
+    background: -moz-linear-gradient(180deg, rgb(13, 71, 58), rgb(78, 91, 191), rgb(47, 49, 39));
+    background: linear-gradient(180deg, rgb(47, 49, 39), rgb(78, 91, 191), rgb(47, 49, 39));
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.FullChatWindowSubmitButton {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    background-color: lightgrey;
+    display: grid;
+    min-height: 30px;
+    align-items: center;
+    justify-items: center;
+    background: -webkit-linear-gradient(180deg, rgb(47, 49, 39), rgb(78, 91, 191), rgb(47, 49, 39));
+    background: -moz-linear-gradient(180deg, rgb(13, 71, 58), rgb(78, 91, 191), rgb(47, 49, 39));
+    background: linear-gradient(180deg, rgb(47, 49, 39), rgb(78, 91, 191), rgb(47, 49, 39));
+    opacity: 0.8;
+    border-radius: 5px;
+}
+

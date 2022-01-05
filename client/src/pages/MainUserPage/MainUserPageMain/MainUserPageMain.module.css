@@ -1,0 +1,6 @@
+.main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 65vh;
+    background-color: #0d47a1;
+}

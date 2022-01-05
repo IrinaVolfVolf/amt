@@ -1,0 +1,68 @@
+html {
+    background: linear-gradient(45deg, #8baaaa, #ae8b9c);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #8baaaa, #ae8b9c);
+
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+    color: whitesmoke;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    max-width: 1920px;
+    height: auto;
+    grid-gap: 3px;
+    grid-template-rows: '100px 10px 10px minmax(30px, auto) 10px 10px 10px';
+    grid-template-columns: '30px auto auto auto auto auto auto';
+    background-color: LightCyan;
+    color: #444;
+    padding: 10px;
+    border-radius: 10px
+}
+
+/* xs (<=543px) */
+@media (max-width: 575px) {
+
+}
+
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* xl (>=1200) */
+@media (min-width: 1200px) {
+
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

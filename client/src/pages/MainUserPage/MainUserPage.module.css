@@ -1,0 +1,7 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: calc(1px + 100vh*0.01);
+    padding: calc(3px + 100vh*0.01) 0 calc(3px + 100vh*0.01) 0;
+}
+

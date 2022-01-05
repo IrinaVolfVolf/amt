@@ -1,0 +1,116 @@
+.header {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 15vh;
+  min-height: 30px;
+  background-color: #0f9d58;
+  display: grid;
+  display: grid;
+  grid-template-columns: 20vw 30vw auto 20vw 10vw 10vw;
+  height: 30px;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-color: LightCyan;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.user_img {
+  width: 18vw;
+  height: auto;
+  z-index: 2;
+  background-color: LightCyan;
+}
+
+
+.stamina {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-color: lightgrey;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.meat {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-color: none;
+  display: grid;
+  align-items: center;
+  justify-items: right;
+}
+
+  .wood {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    background-color: none;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+  }
+
+  .stone {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    background-color: none;
+    display: grid;
+    align-items: center;
+    justify-items: right;
+  }
+
+  .steel {
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
+    background-color: none;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+  }
+
+  .power {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: silver;
+  }
+
+  .empty {
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    background-color: gold;
+  }
+
+  .diamonds {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    background-color: pink;
+  }
+
+  .vip {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    background-color: none;
+    background-color: LightCyan;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+
+  }
+
+  .vip_img {
+    width: auto;
+    height: 1vh;
+    z-index: 1;
+    background-color: LightCyan;
+    transform: scaleX(-1);
+  }
+
+  @media (min-device-width: 760px) {
+    .header {
+      grid-template-columns: 20vw 10vw auto 6vw 3vw 3vw;
+    }
+  }
