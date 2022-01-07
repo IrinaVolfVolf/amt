@@ -46,6 +46,7 @@ mongoose.connection.once("open", () => {
 
 //  Bring in the productionErrors
 app.use("/user", require('./routes/user2'))
+app.use("/chatroom", require('./routes/Chatroom'))
 
 // Setup Error Handlers
 const errorHandlers = require("./handlers/errorHandlers")
