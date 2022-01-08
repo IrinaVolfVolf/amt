@@ -1,10 +1,9 @@
 const mongoose = require('mongoose')
 
 const ChatRoomSchema = new mongoose.Schema({
-  nameOfChat: {
+  name: {
     type: String,
-    required: true,
-    default: "NewChatRoomName"
+    required: 'Name of chatroom is requred!!!'
   },
   created_at: {
     type: Date,

@@ -22,7 +22,9 @@ const Footer = () => {
                 <div className={styles.inventory}>
                     <img src={task_list} alt="task_list" className={styles.task_list}/>
                     <img src={tools} alt="tools" id={tools} className={styles.task_list}/>
-                    <img src={mailBox} alt="mailBox" className={styles.task_list}/>
+                    <div className={styles.mailBox}>
+                        <a href="/MainChatPage"><img src={mailBox} alt="mailBox"></img></a>
+                    </div>
                     <img src={team} alt="team" className={styles.task_list}/>
                     <img src={userInfo} alt="userInfo" className={styles.task_list}/>
                 </div>
